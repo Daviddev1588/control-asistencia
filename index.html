@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Asistencia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Control de Asistencia</h1>
+    <form id="attendance-form">
+        <input type="number" id="id" placeholder="ID" required>
+        <input type="text" id="nombre" placeholder="Nombre" required>
+        <input type="text" id="apellido" placeholder="Apellido" required>
+        <input type="text" id="direccion" placeholder="Dirección" required>
+        <input type="text" id="carrera" placeholder="Carrera" required>
+        <input type="text" id="codigo" placeholder="Código" required>
+        <button type="submit">Agregar</button>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Dirección</th>
+                <th>Carrera</th>
+                <th>Código</th>
+            </tr>
+        </thead>
+        <tbody id="attendance-table-body">
+        </tbody>
+    </table>
+
+    <script src="main.js"></script>
+</body>
+</html>
